@@ -1,0 +1,15 @@
+try {
+			in = new BufferedReader(new InputStreamReader(System.in));
+			System.out.println("Please enter your name: ");
+			setName(in.readLine());
+			System.out.println("Please enter your age: ");
+			setAge(Integer.parseInt(in.readLine()));
+			System.out.println("Hello World! My name is " + 
+								getName() + 
+								" and I am " + 
+								getAge() + 
+								" year(s) old!"
+								);
+		} catch (IOException e){
+			e.printStackTrace();
+		}
